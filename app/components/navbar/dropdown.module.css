@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.dropdownList{
+    position: absolute;
+    top: 3rem;
+    background-color: var(--green-color-variant-1);
+    width: 10rem;
+    text-align: center;
+    min-height: 10rem;
+}

@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 2.25rem;
+}
+
+.bookingBTN {
+  height: 2rem;
+  width: 10rem;
+  background-color: var(--green-color-variant-1);
+  font-size: var(--subheader-text);
+  font-weight: 700;
+  border-radius: 0.625rem;
+  border: solid var(--gold-color-variant-1) 1px;
+  color: var(--gold-color-variant-1);
+}
+
+.Dropdowns {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 125px;
+  gap: 1.25rem;
+  font-size: var(--subheader-text);
+  color: var(--gold-color-variant-1);
+}
+
+.logoContainer {
+  color: var(--gold-color-variant-1);
+  padding: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.logoImage {
+  width: 12.5rem;
+}
+
+/* COUNSELLING PSYCHOLOGIST */
+.logoHeader {
+  font-size: var(--header-text);
+}
+
+.logoSubHeader {
+  font-size: var(--subheader-text);
+}
