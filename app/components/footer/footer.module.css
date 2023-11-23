@@ -1,0 +1,13 @@
+.container {
+  min-height: 100px;
+}
+
+.box {
+  border-radius: 100% 0% 0% 100% / 100% 100% 0% 0% ;
+  /* border-left: var(--gold-color-variant-1) solid 10px; */
+  border-top: var(--gold-color-variant-1) solid 10px;
+  width: 50%;
+  height: 100%;
+  margin-left: auto;
+  background-color: var(--green-color-variant-1);
+}

@@ -5,13 +5,15 @@
   --white-color-variant-3: #838c83;
 
   /* Shades of gold */
-  --gold-color-variant-1:#cfaa67;
+  --gold-color-variant-1: #cfaa67;
 
   /*  Shades of Green */
   --green-color-variant-1: #183e34;
 
   --header-text: 24px;
   --subheader-text: 16px;
+  --mobileheader-text: 16px;
+  --mobilesubheader-text: 12px;
 }
 
 html {
@@ -25,15 +27,10 @@ html {
 
 body {
   background-color: var(--white-color-variant-1);
-  /* display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 100px auto 100px; */
 }
 
-footer,
 nav {
   background-color: var(--green-color-variant-1);
-  
 }
 
 nav {
@@ -46,5 +43,6 @@ nav {
 footer {
   position: fixed;
   bottom: 0;
-  border-top: var(--gold-color-variant-1) solid 10px;
+  height: 100px;
+  width: 100%;
 }

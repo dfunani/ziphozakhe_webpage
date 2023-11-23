@@ -1,9 +1,64 @@
+/* Component Root Container */
+
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-inline: 2.25rem;
+  text-align: center;
+  gap: 0.625rem;
 }
+
+/* Dropdown Container */
+
+.Dropdowns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  font-size: var(--subheader-text);
+  color: var(--gold-color-variant-1);
+  margin-top: auto;
+}
+
+/* Webpage Logo Container*/
+
+.logoContainer {
+  color: var(--gold-color-variant-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Logo */
+
+.logoImage {
+  width: 10rem;
+}
+
+/* Webpage Title Header Container*/
+
+.logoHeaderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ZIPHOZAKHE KILI */
+
+.logoHeader {
+  font-size: var(--header-text);
+}
+
+/* COUNSELLING PSYCHOLOGIST */
+
+.logoSubHeader {
+  font-size: var(--subheader-text);
+}
+
+/* Booking button */
 
 .bookingBTN {
   height: 2rem;
@@ -16,34 +71,69 @@
   color: var(--gold-color-variant-1);
 }
 
-.Dropdowns {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  height: 125px;
-  gap: 1.25rem;
-  font-size: var(--subheader-text);
-  color: var(--gold-color-variant-1);
+.bookingBTN:hover {
+  background-color: var(--gold-color-variant-1);
+  color: var(--green-color-variant-1);
 }
 
-.logoContainer {
-  color: var(--gold-color-variant-1);
-  padding: 0.625rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+.hamburger {
+  display: none;
 }
 
-.logoImage {
-  width: 12.5rem;
-}
+/* Smaller Views */
 
-/* COUNSELLING PSYCHOLOGIST */
-.logoHeader {
-  font-size: var(--header-text);
-}
+@media screen and (width < 750px) {
+  .container {
 
-.logoSubHeader {
-  font-size: var(--subheader-text);
+    padding: 0.625rem;
+    gap: 0.625rem;
+    text-align: center;
+  }
+  .Dropdowns {
+    display: none;
+  }
+
+  .DropdownsMobile{
+    color: var(--gold-color-variant-1);
+    position: absolute;
+    top: 4.5rem;
+    right: -0.5rem;
+    background-color: var(--green-color-variant-1);
+    min-width: max-content;
+    min-height: 5rem;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 0.625rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .DropdownsMobile>*{
+    margin: 0.25rem;
+  }
+  .hamburger {
+    display: flex;
+    justify-content: center;
+
+    align-self: flex-end;
+    background-color: transparent;
+
+    gap: 0.625rem;
+    border: solid var(--gold-color-variant-1) 1px;
+    border-radius: 10px;
+    padding: 0.625rem;
+    position: relative;
+  }
+
+  .hamburger > * {
+    color: var(--gold-color-variant-1);
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .bookingBTN {
+    width: auto;
+    height: auto;
+    padding-inline: 0.625rem;
+    text-wrap: nowrap;
+  }
 }
